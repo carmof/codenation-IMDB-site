@@ -1,0 +1,59 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+header {
+  background-image: url("../img/capa-madmax2.jpg");
+  color: white;
+  height: 90vh;
+}
+
+header h1 {
+  font-size: 4em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.column-section {
+  margin: auto;
+  max-width: 960px;
+  position: relative;
+}
+.flex {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.flex,
+.align-center {
+  align-items: center;
+}
+.flex,
+.justify-between {
+  justify-content: space-between;
+}
+.navbar {
+  padding: 20px 0;
+  font-weight: bold;
+}
+.nav-list {
+  list-style: none;
+}
+.nav-list > li {
+  padding: 0 20px;
+}
+.profile-picture {
+  width: 50px;
+  border-radius: 100%;
+  margin-right: 10px;
+  overflow: hidden;
+}
