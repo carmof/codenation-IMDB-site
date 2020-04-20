@@ -292,3 +292,13 @@ ul {
   font-weight: 700;
   font-size: 1.5em;
 }
+
+/* FOOTER */
+.footer-wrapper{
+	padding: 20px 0;
+}
+.footer-icon{
+	font-size: 25px;
+	margin-left: 20px;
+	color: #BABABA;
+}
