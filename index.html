@@ -20,12 +20,12 @@
             <img src="img/logo-imdb.jpg" alt="imdb-logo" />
           </a>
           <ul class="nav-list flex center">
-            <li><a href="">Lançamentos</a></li>
-            <li><a href="">Crítica</a></li>
-            <li><a href="">Em Cartaz</a></li>
+            <li><a class="yellow-hover">Lançamentos</a></li>
+            <li><a class="yellow-hover">Crítica</a></li>
+            <li><a class="yellow-hover">Em Cartaz</a></li>
           </ul>
           <div>
-            <a href="" class="flex align-center">
+            <a class="profile-picture-wrapper yellow-hover flex align-center">
               <img class="profile-picture" src="img/walter-white.jpg" alt="" />
               <span>Walter White</span>
             </a>
@@ -34,9 +34,9 @@
         <div class="main-title-description">
           <h1>MAD MAX: ESTRADA DA FÚRIA</h1>
           <ul class="movie-type-list flex">
-            <li>Aventura</li>
-            <li>Sci-Fi</li>
-            <li>Terror</li>
+            <li><a class="yellow-hover">Aventura</a></li>
+            <li><a class="yellow-hover">Sci-Fi</a></li>
+            <li><a class="yellow-hover">Terror</a></li>
           </ul>
           <button>
             <span>Assistir Trailer</span>
@@ -44,24 +44,343 @@
               <i class="fa fa-play-circle-o" aria-hidden="true"></i>
             </div>
           </button>
-          <p>Nos cinemas</p>
-          <p class="yellow">15 de Outubro de 2015 (Brasil)</p>
+          <p class="p-padding">Nos cinemas</p>
+          <p class="yellow p-padding">15 de Outubro de 2015 (Brasil)</p>
         </div>
       </div>
     </header>
-    <section>
+    <main class="poster-section">
       <div class="column-section">
         <nav class="movies-navbar flex justify-center">
           <ul class="flex align-center">
             <li><a href="">Nos Cinemas</a></li>
             <li><a href="">Em Breve</a></li>
-			<li><a href="">Bilheteria</a></li>
-			<li><a href="">Séries</a></li>
-			<li><a href="">Trailers</a></li>
+            <li><a href="">Bilheteria</a></li>
+            <li><a href="">Séries</a></li>
+            <li><a href="">Trailers</a></li>
           </ul>
         </nav>
+        <div class="posters-wrapper">
+          <!-- MOONLIGHT -->
+          <div class="poster-card">
+            <div class="poster-img">
+              <img src="img/poster-moonlight.jpg" alt="moonlight-poster" />
+              <div class="card-hover flex column align-center justify-center">
+                <p>Moonlight</p>
+                <div class="play-icon">
+                  <i class="fa fa-play" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card-text">
+              <p class="movie-title">Moonlight</p>
+              <ul class="movie-types">
+                <li><a href="">Drama</a></li>
+              </ul>
+              <div class="flex align-center justify-between">
+                <div class="poster-like">
+                  <i class="fa fa-heart" aria-hidden="true"></i>
+                </div>
+                <span class="movie-rating">7.0</span>
+              </div>
+            </div>
+          </div>
+          <!-- BLADERUNNER -->
+          <div class="poster-card">
+            <div class="poster-img">
+              <img src="img/poster-bladerunner.jpg" alt="bladerunner-poster" />
+              <div class="card-hover flex column align-center justify-center">
+                <p>BladeRunner</p>
+                <div class="play-icon">
+                  <i class="fa fa-play" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card-text flex column justify-between">
+              <p class="movie-title">BladeRunner</p>
+              <ul class="movie-types">
+                <li><a href="">Aventura</a></li>
+                <li><a href="">SCI-FI</a></li>
+              </ul>
+              <div class="flex align-center justify-between">
+                <div class="poster-like">
+                  <i class="fa fa-heart" aria-hidden="true"></i>
+                </div>
+                <span class="movie-rating">7.0</span>
+              </div>
+            </div>
+          </div>
+          <!-- MAD MAX -->
+          <div class="poster-card">
+            <div class="poster-img">
+              <img src="img/poster-mad-max.jpg" alt="madmax-poster" />
+              <div class="card-hover flex column align-center justify-center">
+                <p>MAD MAX</p>
+                <div class="play-icon">
+                  <i class="fa fa-play" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card-text flex column justify-between">
+              <p class="movie-title">Mad max</p>
+              <ul class="movie-types">
+                <li><a href="">Aventura</a></li>
+                <li><a href="">SCI-FI</a></li>
+                <li><a href="">terror</a></li>
+              </ul>
+              <div class="flex align-center justify-between">
+                <div class="poster-like">
+                  <i class="fa fa-heart" aria-hidden="true"></i>
+                </div>
+                <span class="movie-rating">7.0</span>
+              </div>
+            </div>
+          </div>
+          <!-- ALITA -->
+          <div class="poster-card">
+            <div class="poster-img">
+              <img src="img/poster-alita.jpg" alt="alita-poster" />
+              <div class="card-hover flex column align-center justify-center">
+                <p>alita</p>
+                <div class="play-icon">
+                  <i class="fa fa-play" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card-text flex column justify-between">
+              <p class="movie-title">alita</p>
+              <ul class="movie-types">
+                <li><a href="">Aventura</a></li>
+                <li><a href="">SCI-FI</a></li>
+              </ul>
+              <div class="flex align-center justify-between">
+                <div class="poster-like">
+                  <i class="fa fa-heart" aria-hidden="true"></i>
+                </div>
+                <span class="movie-rating">7.0</span>
+              </div>
+            </div>
+          </div>
+          <!-- BATMAN -->
+          <div class="poster-card">
+            <div class="poster-img">
+              <img
+                src="img/poster-batman-superman.jpg"
+                alt="BATMAN VS SUPERMAN-poster"
+              />
+              <div class="card-hover flex column align-center justify-center">
+                <p>BATMAN VS SUPERMAN</p>
+                <div class="play-icon">
+                  <i class="fa fa-play" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card-text flex column justify-between">
+              <p class="movie-title">BATMAN VS SUPERMAN</p>
+              <ul class="movie-types">
+                <li><a href="">Ação</a></li>
+                <li><a href="">Drama</a></li>
+              </ul>
+              <div class="flex align-center justify-between">
+                <div class="poster-like">
+                  <i class="fa fa-heart" aria-hidden="true"></i>
+                </div>
+                <span class="movie-rating">7.0</span>
+              </div>
+            </div>
+          </div>
+          <!-- JURASSIC -->
+          <div class="poster-card">
+            <div class="poster-img">
+              <img
+                src="img/poster-jurassic-world.jpg"
+                alt="JURASSIC WORLD-poster"
+              />
+              <div class="card-hover flex column align-center justify-center">
+                <p>JURASSIC WORLD</p>
+                <div class="play-icon">
+                  <i class="fa fa-play" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card-text flex column justify-between">
+              <p class="movie-title">JURASSIC WORLD</p>
+              <ul class="movie-types">
+                <li><a href="">Aventura</a></li>
+                <li><a href="">terror</a></li>
+              </ul>
+              <div class="flex align-center justify-between">
+                <div class="poster-like">
+                  <i class="fa fa-heart" aria-hidden="true"></i>
+                </div>
+                <span class="movie-rating">7.0</span>
+              </div>
+            </div>
+          </div>
+          <!-- GUERRA -->
+          <div class="poster-card">
+            <div class="poster-img">
+              <img
+                src="img/poster-guerra-civil.jpg"
+                alt="JURASSIC WORLD-poster"
+              />
+              <div class="card-hover flex column align-center justify-center">
+                <p>GUERRA CIVIL</p>
+                <div class="play-icon">
+                  <i class="fa fa-play" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card-text flex column justify-between">
+              <p class="movie-title">GUERRA CIVIL</p>
+              <ul class="movie-types">
+                <li><a href="">Aventura</a></li>
+                <li><a href="">ação</a></li>
+              </ul>
+              <div class="flex align-center justify-between">
+                <div class="poster-like">
+                  <i class="fa fa-heart" aria-hidden="true"></i>
+                </div>
+                <span class="movie-rating">7.0</span>
+              </div>
+            </div>
+          </div>
+          <!-- MARVEL -->
+          <div class="poster-card">
+            <div class="poster-img">
+              <img
+                src="img/poster-capita-marvel.jpg"
+                alt="CAPITÃ MARVEL-poster"
+              />
+              <div class="card-hover flex column align-center justify-center">
+                <p>CAPITÃ MARVEL</p>
+                <div class="play-icon">
+                  <i class="fa fa-play" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card-text flex column justify-between">
+              <p class="movie-title">CAPITÃ MARVEL</p>
+              <ul class="movie-types">
+                <li><a href="">SCI-FI</a></li>
+              </ul>
+              <div class="flex align-center justify-between">
+                <div class="poster-like">
+                  <i class="fa fa-heart" aria-hidden="true"></i>
+                </div>
+                <span class="movie-rating">7.0</span>
+              </div>
+            </div>
+          </div>
+          <!-- JOKER -->
+          <div class="poster-card">
+            <div class="poster-img">
+              <img src="img/poster-coringa.jpg" alt="CORINGA-poster" />
+              <div class="card-hover flex column align-center justify-center">
+                <p>CORINGA</p>
+                <div class="play-icon">
+                  <i class="fa fa-play" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card-text flex column justify-between">
+              <p class="movie-title">CORINGA</p>
+              <ul class="movie-types">
+                <li><a href="">Suspense</a></li>
+                <li><a href="">Drama</a></li>
+              </ul>
+              <div class="flex align-center justify-between">
+                <div class="poster-like">
+                  <i class="fa fa-heart" aria-hidden="true"></i>
+                </div>
+                <span class="movie-rating">7.0</span>
+              </div>
+            </div>
+          </div>
+          <!-- LIGA -->
+          <div class="poster-card">
+            <div class="poster-img">
+              <img
+                src="img/poster-liga-justica.jpg"
+                alt="LIGA DA JUSTIÇA-poster"
+              />
+              <div class="card-hover flex column align-center justify-center">
+                <p>LIGA DA JUSTIÇA</p>
+                <div class="play-icon">
+                  <i class="fa fa-play" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card-text flex column justify-between">
+              <p class="movie-title">LIGA DA JUSTIÇA</p>
+              <ul class="movie-types">
+                <li><a href="">Aventura</a></li>
+                <li><a href="">Ação</a></li>
+              </ul>
+              <div class="flex align-center justify-between">
+                <div class="poster-like">
+                  <i class="fa fa-heart" aria-hidden="true"></i>
+                </div>
+                <span class="movie-rating">7.0</span>
+              </div>
+            </div>
+          </div>
+          <!-- STAR -->
+          <div class="poster-card">
+            <div class="poster-img">
+              <img src="img/poster-star-wars.jpg" alt="STAR WARS VII-poster" />
+              <div class="card-hover flex column align-center justify-center">
+                <p>STAR WARS VII</p>
+                <div class="play-icon">
+                  <i class="fa fa-play" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card-text flex column justify-between">
+              <p class="movie-title">STAR WARS VII</p>
+              <ul class="movie-types">
+                <li><a href="">Aventura</a></li>
+                <li><a href="">SCI-FI</a></li>
+              </ul>
+              <div class="flex align-center justify-between">
+                <div class="poster-like">
+                  <i class="fa fa-heart" aria-hidden="true"></i>
+                </div>
+                <span class="movie-rating">7.0</span>
+              </div>
+            </div>
+          </div>
+          <!-- PANTERA -->
+          <div class="poster-card">
+            <div class="poster-img">
+              <img
+                src="img/poster-pantera-negra.jpg"
+                alt="PANTERA NEGRA-poster"
+              />
+              <div class="card-hover flex column align-center justify-center">
+                <p>PANTERA NEGRA</p>
+                <div class="play-icon">
+                  <i class="fa fa-play" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card-text flex column justify-between">
+              <p class="movie-title">PANTERA NEGRA</p>
+              <ul class="movie-types">
+                <li><a href="">Aventura</a></li>
+                <li><a href="">SCI-FI</a></li>
+              </ul>
+              <div class="flex align-center justify-between">
+                <div class="poster-like">
+                  <i class="fa fa-heart" aria-hidden="true"></i>
+                </div>
+                <span class="movie-rating">7.0</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </section>
+    </main>
     <footer>
       <div class="column-section"></div>
     </footer>
