@@ -2,10 +2,14 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400, 700);
 :root {
   --yellow: #e4bb23;
+  --grey: #dfdfdf;
 }
 * {
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
+}
+body {
+  font-size: 16px;
 }
 button {
   background-color: var(--yellow); /* Green */
@@ -39,7 +43,6 @@ button:hover::after {
 }
 a {
   text-decoration: none;
-  color: white;
   transition: 0.2s;
 }
 a:hover,
@@ -50,6 +53,20 @@ img {
   max-width: 100%;
   height: auto;
 }
+.column-section {
+  margin: auto;
+  max-width: 960px;
+  position: relative;
+}
+.profile-picture {
+  width: 50px;
+  border-radius: 100%;
+  margin-right: 10px;
+  overflow: hidden;
+}
+
+/* HEADER */
+
 header {
   background-image: url("../img/capa-madmax2.jpg");
   color: white;
@@ -84,11 +101,9 @@ header h1 {
   text-transform: uppercase;
   font-weight: 700;
 }
-.column-section {
-  margin: auto;
-  max-width: 960px;
-  position: relative;
-}
+
+/* FLEX */
+
 .flex {
   display: flex;
   flex-wrap: nowrap;
@@ -99,22 +114,35 @@ header h1 {
 .flex.align-center {
   align-items: center;
 }
+.flex.justify-center {
+  justify-content: center;
+}
 .flex.justify-between {
   justify-content: space-between;
 }
-.navbar {
-  padding: 20px 0;
-  font-weight: bold;
-}
+
+/* NAVBARS */
 ul {
   list-style: none;
   list-style-position: unset;
   padding: 0;
+  margin: 0;
+}
+/* header */
+.navbar {
+  padding: 20px 0;
+  font-weight: bold;
 }
 .nav-list > li {
   padding: 0 20px;
   text-transform: uppercase;
+  color: white;
 }
+.nav-list a {
+  color: white;
+}
+
+/* movie types */
 .movie-type-list {
   text-transform: uppercase;
   font-weight: 500;
@@ -122,9 +150,23 @@ ul {
 .movie-type-list > li {
   margin-right: 20px;
 }
-.profile-picture {
-  width: 50px;
-  border-radius: 100%;
-  margin-right: 10px;
-  overflow: hidden;
+
+/* movies options */
+.movies-navbar {
+  border-bottom: 1px solid var(--grey);
+}
+.movies-navbar ul li {
+  padding: 19px 0;
+  margin: 0 20px;
+  border-bottom: 1px solid transparent;
+  transition: 0.2s;
+}
+.movies-navbar li:hover {
+  border-bottom: 1px solid var(--yellow);
+  cursor: pointer;
+}
+.movies-navbar a {
+  color: var(--yellow);
+  font-weight: bold;
+  text-transform: uppercase;
 }
