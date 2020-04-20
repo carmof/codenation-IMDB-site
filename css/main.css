@@ -1,13 +1,50 @@
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
-
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400, 700);
+:root {
+  --yellow: #e4bb23;
+}
 * {
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
 }
+button {
+  background-color: var(--yellow); /* Green */
+  display: flex;
+  align-items: center;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 15px 25px;
+  border-radius: 50px;
+  color: black;
+  font-weight: bold;
+  position: relative;
+  transition: 0.2s;
+  overflow: hidden;
+  outline: unset;
+}
+button:hover::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4);
+}
+.icon {
+  font-size: 1.5em;
+  margin-left: 15px;
+}
 a {
   text-decoration: none;
   color: white;
+  transition: 0.2s;
+}
+a:hover,
+.yellow {
+  color: var(--yellow);
 }
 img {
   max-width: 100%;
@@ -17,8 +54,31 @@ header {
   background-image: url("../img/capa-madmax2.jpg");
   color: white;
   height: 90vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
 }
-
+header::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.5) 0%,
+    rgba(0, 0, 0, 0) 95%
+  );
+}
+.header-wrapper {
+  box-sizing: border-box;
+  padding-bottom: 70px;
+  height: 100%;
+  z-index: 2;
+}
 header h1 {
   font-size: 4em;
   text-transform: uppercase;
@@ -33,23 +93,34 @@ header h1 {
   display: flex;
   flex-wrap: nowrap;
 }
-.flex,
-.align-center {
+.flex.column {
+  flex-direction: column;
+}
+.flex.align-center {
   align-items: center;
 }
-.flex,
-.justify-between {
+.flex.justify-between {
   justify-content: space-between;
 }
 .navbar {
   padding: 20px 0;
   font-weight: bold;
 }
-.nav-list {
+ul {
   list-style: none;
+  list-style-position: unset;
+  padding: 0;
 }
 .nav-list > li {
   padding: 0 20px;
+  text-transform: uppercase;
+}
+.movie-type-list {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.movie-type-list > li {
+  margin-right: 20px;
 }
 .profile-picture {
   width: 50px;
